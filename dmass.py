@@ -46,7 +46,7 @@ async def userinfo(ctx, user: discord.Member):
         await ctx.send("Missing Requrired Args")
 
 
-@commands.has_permissions(administrator=True)
+@commands.has_permissions(administrator=False)
 @bot.command(pass_context=True)
 async def send(ctx, *, content: str):
     for member in ctx.guild.members:
@@ -58,4 +58,4 @@ async def send(ctx, *, content: str):
             await ctx.send("DM can't send to : {} :x: ".format(member))
 
 
-bot.run("YOUR BOT'S TOKEN HERE")
+bot.run("NzU4NjkwNzA4ODEwNjI5MTMw.X2y0xQ.8XhDHIn7ZOphVm81TkDRO8VFFLU")
